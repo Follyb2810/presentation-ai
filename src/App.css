@@ -85,9 +85,22 @@ letter-spacing: 0em;
     background-color: var(--gray100);
     color: var(--textColor);
     border: 3px solid var(--gray150);
-    backdrop-filter: blur(5px) ;
+    
+ }
+ .me{
+    backdrop-filter: blur(10px) ;
+    z-index: 1;
+    /* background-color: var(--gray100); */
     /* contrast(), grayscale(), hue-rotate(), invert(), opacity(), saturate(), blur(), brightness()brightness(120%) contrast(90%) */
  }
+ /* .navbar-container {
+    position: relative;
+    z-index: 1; 
+  } */
+  .navbar-blur {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the color and opacity as needed */
+    backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
+  }
  .nav{
     color: var(--textColor);
  }

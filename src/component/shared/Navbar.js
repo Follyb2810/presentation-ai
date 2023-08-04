@@ -4,7 +4,8 @@ import * as IMG from '../images/img'
 
 function NavBar() {
   return (
-    <Navbar collapseOnSelect expand="md"  className='fixed-top '>
+ 
+    <Navbar collapseOnSelect expand="md"  className='fixed-top me py-2'>
       <Container className="navbg  rounded-4" >
         <Navbar.Brand href="/" as={Link}>
            <img src={IMG.Logo} alt='logo' style={{width:'42px'}}/><span className='ms-2 logo'>Present AI</span>
