@@ -9,13 +9,14 @@
  :root{
     --black:#050214;
     --black100:#191919;
+    --black150:#28292B;
     --gray100:#817E7E;
     --gray150: #95A2B3;
     --gray200:#B1B1B1;
     --yellow:#FFD159;
     --green:#42D9CA;
     --blue:#A044FF;
-
+    --natural:#fff;
     
     --textColor:#CDCDCD;
     --bgbackgroundGradient :linear-gradient(0deg, #42D9CA, #42D9CA);
@@ -32,7 +33,7 @@
  }
  .logo{
     font-family: Gugi;
-font-size: 18px;
+font-size: 24px;
 font-weight: 400;
 line-height: 30px;
 letter-spacing: 0em;
@@ -50,6 +51,18 @@ color: var(--textColor);
  }
  .text-Green{
     color: var(--green);
+ }
+ .bgYellow{
+    background: var(--yellow);
+ }
+ .fs-16{
+font-family: Space Grotesk;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+
+
  }
  .fs-48{
 font-family: Space Grotesk;
@@ -93,10 +106,7 @@ letter-spacing: 0em;
     /* background-color: var(--gray100); */
     /* contrast(), grayscale(), hue-rotate(), invert(), opacity(), saturate(), blur(), brightness()brightness(120%) contrast(90%) */
  }
- /* .navbar-container {
-    position: relative;
-    z-index: 1; 
-  } */
+
   .navbar-blur {
     background-color: rgba(255, 255, 255, 0.8); /* Adjust the color and opacity as needed */
     backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
@@ -126,3 +136,26 @@ height:500px;
     background: linear-gradient(247.29deg, #7440E1 -22.66%, #FFD159 64.75%);
 }
 
+/* ! present */
+.presentHea{
+    font-family: Gugi;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    vertical-align: middle;
+    color: var(--textColor); 
+}
+.present{
+    background: var(--bg5backgroundGradient);
+}
+
+.presentIcon{
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.cardbg{
+    background: var(--black150);
+    color:var(--natural) ;
+}
