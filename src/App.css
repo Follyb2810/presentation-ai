@@ -44,6 +44,10 @@ color: var(--textColor);
  body{
     background-color: var(--black);
  }
+ .bgAccordion{
+    background-color: var(--black);
+    color: var(--natural);
+ }
  .text-Yellow{
     color: var(--yellow);
  }
@@ -63,6 +67,13 @@ font-weight: 400;
 line-height: 20px;
 letter-spacing: 0em;
  }
+ .fs-18{
+font-family: Space Grotesk;
+font-size: 18px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+ }
 
  .fs-24{
     font-family: Space Grotesk;
@@ -70,6 +81,15 @@ font-size: 24px;
 font-weight: 400;
 line-height: 31px;
 letter-spacing: 0em;
+ }
+ .fs-32{
+   font-family: Space Grotesk;
+font-size: 32px;
+font-weight: 500;
+line-height: 41px;
+letter-spacing: 0em;
+text-align: center;
+
  }
 
  .fs-48{
@@ -103,7 +123,7 @@ letter-spacing: 0em;
 
   .navbar-blur {
     background-color: rgba(255, 255, 255, 0.8); /* Adjust the color and opacity as needed */
-    backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
+    backdrop-filter: blur(40px); /* Adjust the blur intensity as needed */
   }
  .nav{
     color: var(--textColor);
@@ -176,11 +196,120 @@ height:500px;
 /* src/styles.css */
 /* ! feature card */
 .featureCard{
-   background: var(--black200);
+   /* background: var(--black200); */
+   /* background: linear-gradient(0deg, #B1B1B1, #B1B1B1); */
+/* background:linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)); */
+background: linear-gradient(180deg, rgba(6, 47, 61, 0.1) 0%, rgba(6, 47, 61, 0.1) 51.32%, rgba(255, 209, 89, 0.1) 100%);
+/* linear-gradient(180deg, #7440E1 0%, #FFD159 100%); */
+/* background: linear-gradient(180deg, #7440E1 0%, #FFD159 100%); */
+border: 3px solid #B1B1B1;
+/* border-image-source: linear-gradient(180deg, #7440E1 0%, #FFD159 100%); */
+/* background: linear-gradient(180deg, #7440E1 0%, #FFD159 100%); */
+
+
+
+   /* background: var(--black200); */
    color: var(--natural);
    height: 350px;
+   /* width: 320px; */
 
 }
+
+.feature{
+   Width:450px;
+   Height:350px
+}
+
+/* ! who need */
+.whoneed{
+   background-color: var(--yellow);
+}
+/* ! accordion */
+.accordion-button::after {
+   /* background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus-circle' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>"); */
+   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus-lg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/></svg>");
+ }
+ .accordion-button:not(.collapsed)::after {
+   /* background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash-circle' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>"); */
+   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-dash' viewBox='0 0 16 16'><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
+ }
+ /* In your CSS or stylesheets */
+ .accordion {
+   --bs-accordion-color: var(--natural);
+   --bs-accordion-bg: var(--black100);
+   /* --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease; */
+   --bs-accordion-border-color:none;
+   --bs-accordion-border-width: none;
+   --bs-accordion-border-radius: none;
+   --bs-accordion-inner-border-radius:none;
+   /* --bs-accordion-btn-padding-x: 1.25rem; */
+   /* --bs-accordion-btn-padding-y: 1rem; */
+   /* --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23212529%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e); */
+   /* --bs-accordion-btn-icon-width: 1.25rem; */
+   /* --bs-accordion-btn-icon-transform: rotate(-180deg); */
+   /* --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out; */
+   /* --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23052c65%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e); */
+   --bs-accordion-btn-focus-border-color: none;
+   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem var(--natural);
+   /* --bs-accordion-body-padding-x: 1.25rem; */
+   /* --bs-accordion-body-padding-y: 1rem; */
+   --bs-accordion-active-color: var(--natural);
+   --bs-accordion-active-bg: var(--black);
+}
+
+.accordion-button {
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+   font-size: 1rem;
+   color: var(--natural);
+   text-align: left;
+   background-color: var(--bs-accordion-btn-bg);
+   border: 0;
+   border-radius: 0;
+   overflow-anchor: none;
+   transition: var(--bs-accordion-transition);
+}
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: var(--bs-accordion-inner-border-radius);
+    border-top-right-radius: var(--bs-accordion-inner-border-radius);
+}
+.accordion-item:first-of-type {
+   border-top-left-radius: var(--bs-accordion-border-radius);
+   border-top-right-radius: var(--bs-accordion-border-radius);
+}
+.accordion-item {
+   color: var(--bs-accordion-color);
+   background-color: var(--bs-accordion-bg);
+   border: none;
+   border-bottom: 1px solid var(--natural);
+}
+ 
+
+
+ /* ! what user say */
+ 
+ 
+ @media (max-width: 1200px) {}
+ @media (max-width: 992px) {}
+ @media (max-width: 768px) {}
+ @media (max-width: 576px) {
+   .feature{
+      Width:400px;
+      Height:100%
+   }
+ }
+ @media (max-width: 480px) {
+   .feature{
+      Width:400px;
+      Height:100%
+   }
+   
+ }
+ 
+ 
  
  .horizontal-card-slider {
    max-width: 800px;
