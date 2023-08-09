@@ -1,4 +1,6 @@
+import { Form, InputGroup } from 'react-bootstrap'
 import * as Img from './component/images/img'
+import {FaArrowRight} from 'react-icons/fa'
 
 const featureCard =[
     {
@@ -43,6 +45,11 @@ const WhoNeedCard = {
         },
         whatUsersay:{
             title:"What our <span class='text-Yellow'>users say</span> say"
+        },
+        contact:{
+            title:"Request a Demo<span class='text-Yellow'>Demo</span>",
+            subtitle:"Ready to Revolutionize Your Presentations? Book a Demo ",
+            span:'Now and Ignite the Power of PresentAI.'
         }
     }
 const fagQuest =[
@@ -127,10 +134,46 @@ const userComment =[
         comment:`Wow! PresentAI has taken my public speaking skills to a whole new level. The app's hand gesture control feels like a natural extension of my thoughts, allowing me to effortlessly navigate through my slides. I genuinely feel more connected to my audience, and the engagement level during my talks has soared.`
     },
 ]
+
+const FooterData =[
+  {
+    img:Img.Logo,
+    foot:`+234 0802 065-3695`,
+    footone:null,
+    footSecond:`support@presentai.agency`
+  },
+  {
+    img:null,
+    foot:`Quick Links`,
+    footone:`Features`,
+    footSecond:`support@presentai.agency`
+  },
+  {
+    img:null,
+    foot:`Home`,
+    footone:null,
+    footSecond:`Contact Us`
+  },
+  {
+    img:null,
+    foot:`Subscribe to our newsletter`,
+    footone: <InputGroup className="mb-3">
+    <Form.Control
+      placeholder="Recipient's username"
+      aria-label="Recipient's username"
+      aria-describedby="basic-addon2"
+      size="sm"
+    />
+    <InputGroup.Text id="basic-addon2"><FaArrowRight/></InputGroup.Text>
+  </InputGroup>,
+    footSecond:null
+  },
+]
 export {
 datas,
 featureCard,
 WhoNeedCard,
 fagQuest,
-userComment
+userComment,
+FooterData
 }

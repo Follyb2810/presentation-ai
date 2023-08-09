@@ -8,7 +8,7 @@ function NavBar() {
     <Navbar collapseOnSelect expand="md"  className='fixed-top me py-2'>
       <Container className="navbg  rounded-4" >
         <Navbar.Brand href="/" as={Link}>
-           <img src={IMG.Logo} alt='logo' style={{width:'42px'}}/><span className='ms-2 logo'>Present AI</span>
+           <img src={IMG.Logo} alt='logo' className='logoImg'/><span className='ms-2 logo'>Present AI</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -18,7 +18,7 @@ function NavBar() {
             <Nav.Link as={Link} className='nav'>About Us</Nav.Link>
             <Nav.Link as={Link} className='nav'>Contact Us</Nav.Link>
           </Nav>
-          <Button className='signIn d-block ms-auto border-0 text-dark' style={{ outline: 'none' }}>Sign In</Button>
+          <Button className='signIn d-block px-sm-2 px-md-3 ms-auto border-0 text-dark' style={{ outline: 'none' }}>Sign In</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

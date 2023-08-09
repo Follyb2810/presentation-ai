@@ -32,15 +32,7 @@
 
 
  }
- .logo{
-    font-family: Gugi;
-font-size: 24px;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 0em;
-vertical-align: middle;
-color: var(--textColor);
- }
+
  body{
     background-color: var(--black);
  }
@@ -60,6 +52,9 @@ color: var(--textColor);
  .bgYellow{
     background: var(--yellow);
  }
+ .bgBlack{
+   background: var(--black150);
+}
  .fs-16{
 font-family: Space Grotesk;
 font-size: 16px;
@@ -78,6 +73,13 @@ letter-spacing: 0em;
  .fs-24{
     font-family: Space Grotesk;
 font-size: 24px;
+font-weight: 400;
+line-height: 31px;
+letter-spacing: 0em;
+ }
+ .fs-20{
+    font-family: Space Grotesk;
+font-size: 20px;
 font-weight: 400;
 line-height: 31px;
 letter-spacing: 0em;
@@ -107,6 +109,7 @@ line-height: 82px;
 letter-spacing: 0em;
  }
 
+
 /* ! navbar */
  .navbg{
     background-color: var(--gray100);
@@ -114,6 +117,18 @@ letter-spacing: 0em;
     border: 3px solid var(--gray150);
     
  }
+ .logo{
+   font-family: Gugi;
+font-size: 24px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+vertical-align: middle;
+color: var(--textColor);
+}
+.logoImg{
+   width: 42px;
+}
  .me{
     backdrop-filter: blur(10px) ;
     z-index: 1;
@@ -130,20 +145,15 @@ letter-spacing: 0em;
  }
 
  .signIn{
-    padding:10px 20px;
     background-color: var(--yellow);
     border-radius: 8px;
     color: var(--textColor);
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
 }
 
 /* ! hero */
 .hero{
 display:flex;
- align-content:center;
+align-content:center;
 height:500px;
 }
 .heroBtn{
@@ -237,22 +247,12 @@ border: 3px solid #B1B1B1;
  .accordion {
    --bs-accordion-color: var(--natural);
    --bs-accordion-bg: var(--black100);
-   /* --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease; */
    --bs-accordion-border-color:none;
    --bs-accordion-border-width: none;
    --bs-accordion-border-radius: none;
    --bs-accordion-inner-border-radius:none;
-   /* --bs-accordion-btn-padding-x: 1.25rem; */
-   /* --bs-accordion-btn-padding-y: 1rem; */
-   /* --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23212529%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e); */
-   /* --bs-accordion-btn-icon-width: 1.25rem; */
-   /* --bs-accordion-btn-icon-transform: rotate(-180deg); */
-   /* --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out; */
-   /* --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23052c65%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e); */
    --bs-accordion-btn-focus-border-color: none;
    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem var(--natural);
-   /* --bs-accordion-body-padding-x: 1.25rem; */
-   /* --bs-accordion-body-padding-y: 1rem; */
    --bs-accordion-active-color: var(--natural);
    --bs-accordion-active-bg: var(--black);
 }
@@ -291,9 +291,24 @@ border: 3px solid #B1B1B1;
 
  /* ! what user say */
  
+ /* ! contect */
  
  @media (max-width: 1200px) {}
- @media (max-width: 992px) {}
+ @media (max-width: 992px) {
+   .logo{
+      font-family: Gugi;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 30px;
+   letter-spacing: 0em;
+   vertical-align: middle;
+   color: var(--textColor);
+   }
+   .logoImg{
+      width: 35px;
+   }
+
+ }
  @media (max-width: 768px) {}
  @media (max-width: 576px) {
    .feature{

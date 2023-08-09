@@ -5,6 +5,7 @@ import Present from './Present'
 import Features from './Features'
 import WhoNeed from './WhoNeed'
 import WhatUserSay from './WhatUserSay'
+import Contact from './Contact'
 
 
 const index = () => {
@@ -16,6 +17,7 @@ const index = () => {
 <Features/>
 <WhoNeed/>
 <WhatUserSay/>
+<Contact/>
 
 </>
   )
